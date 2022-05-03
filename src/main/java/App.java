@@ -32,6 +32,7 @@ public class App {
             model.put("hero",hero);
             return new ModelAndView(model, "hero.hbs");
         }, new HandlebarsTemplateEngine());
+
     }
 
 }
