@@ -19,7 +19,7 @@ a{
 	display: inline-block;
 }
 marquee {
-  color: darkgray;
+  color: rgb(179,89,49);
   font-size: 30px;
 }
 .btn{
@@ -52,7 +52,7 @@ margin: 30px 20px 30px;
   height: 350px;
   width: 500px;
   display: block;
-  background-color: greenyellow;
+  background-color: rgb(249,250,251);
   padding: 50px;
   border-radius: 5px;
   margin-top:200px;
