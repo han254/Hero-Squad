@@ -46,6 +46,7 @@ margin: 30px 20px 30px;
   font-size: 1em;
   margin-left:60px;
 }
+
 .form {
   border: 1px solid;
   height: 350px;
@@ -56,4 +57,9 @@ margin: 30px 20px 30px;
   border-radius: 5px;
   margin-top:200px;
   margin-left: 400px;
+}
+body{
+background-image:url(./images/back.jpg);
+background-position: center;
+background-repeat:repeat;
 }
