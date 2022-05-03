@@ -46,3 +46,14 @@ margin: 30px 20px 30px;
   font-size: 1em;
   margin-left:60px;
 }
+.form {
+  border: 1px solid;
+  height: 350px;
+  width: 500px;
+  display: block;
+  background-color: greenyellow;
+  padding: 50px;
+  border-radius: 5px;
+  margin-top:200px;
+  margin-left: 400px;
+}
