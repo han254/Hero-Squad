@@ -35,3 +35,14 @@ margin: 30px 20px 30px;
 .btn:hover {
   background-color: green-yellow;
 }
+.form input[type=text], [type=number]{
+  background: none;
+  width: 250px;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: block;
+  font-size: 1em;
+  margin-left:60px;
+}
