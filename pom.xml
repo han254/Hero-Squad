@@ -76,11 +76,10 @@
                     <jdkVersion>1.8</jdkVersion>
                     <appName>heroic-app254</appName>
                     <processTypes>
-                        <web>java -jar target/hero-nic-1.0-jar-with-dependencies.jar</web>
+                        <web>java -jar target/hero-1.0-jar-with-dependencies.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 </project>
