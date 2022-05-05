@@ -62,3 +62,6 @@ background-image:url(./images/back.jpg);
 background-position: center;
 background-repeat:repeat;
 }
+.success{
+background-color:rgb(255,235,205);
+}

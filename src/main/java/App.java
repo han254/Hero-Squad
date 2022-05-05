@@ -1,4 +1,5 @@
 import models.Hero;
+import models.Squad;
 import org.sql2o.Sql2o;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
@@ -43,6 +44,17 @@ public class App {
             ArrayList<Hero> hero = Hero.getAllInstances();
             model.put("hero",hero);
             return new ModelAndView(model, "hero.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/squad",(req, res) ->{
+            Map<String, Object> model = new HashMap<>();
+            ArrayList<Squad> squads = Squad.getInstances();
+            model.put("squads",squads);
+            ArrayList<Hero> members = Hero.getAllInstances();
+            model.put("heroes",members);
+            Squad newSquad = Squad.findBySquadId(1);
+            model.put("allSquadMembers", newSquad.getSquadMembers());
+            return new ModelAndView(model, "squad.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/squad-form",(req, res) ->{
