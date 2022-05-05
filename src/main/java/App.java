@@ -1,4 +1,5 @@
 import models.Hero;
+import org.sql2o.Sql2o;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
@@ -19,6 +20,11 @@ public class App {
     public static void main(String[] args) {
         port(getHerokuAssignedPort());
         staticFileLocation("/public");
+//        String connectionString = "jdbc:postgresql://localhost:5432/jadle_test"; //!
+//        Sql2o sql2o = new Sql2o(connectionString, null, null); //!
+
+        String connectionString = "jdbc:postgresql://ec2-3-223-213-207.compute-1.amazonaws.com:5432/da5qgtg35psvc8"; //!
+        Sql2o sql2o = new Sql2o(connectionString,"gyzxbsrjolbvnv","2dc46e63424b137feb40257b5c91b0d9aac3cbc11fb82cc18cd1f5038cfbffd5"); //!
         Hero.setUpFirstHero();
         Hero.setUpSecondHero();
 
