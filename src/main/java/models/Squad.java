@@ -41,8 +41,8 @@ public class Squad {
         getSquadMembers().clear(); }
 
     public static Squad setUpNewSquad(){
-        return new Squad("x-men",5);}
+        return new Squad("x-men",3);}
     public static Squad setUPNewSquad(){
-        return new Squad("Black widow",5);}
+        return new Squad("Black widow",8);}
 
 }
